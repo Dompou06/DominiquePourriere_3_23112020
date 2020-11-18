@@ -1,0 +1,7 @@
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+
+@media #{$desktop-up} {
+    body {background: green;}
+}
