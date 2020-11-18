@@ -1,5 +1,12 @@
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+
+
 @include resetcss;
-
-
-
+@include fonts;
+body {
+    font-family: 'robotoregular', sans-serif; 
+    font-size: em(16, 16);
+}
 h1{display: none;}

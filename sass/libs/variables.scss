@@ -1,0 +1,17 @@
+// Variables device
+$mobile: 767px;
+$desktop: 992px;
+$mobile-up: "only screen and (max-width: #{$mobile})";
+$desktop-up: "only screen and (min-width: #{$desktop})";
+$tablet-up: "only screen and (min-width: #{$mobile + 1px}) and (max-width: #{$desktop - 1px})";
+
+// Variables couleurs
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$gris-top: #cfcfcf;
+$gris-input: #eaeaea;
+$gris-section: #f6f6f6;
+$gris-hover: #f5edff;
+$gris-moyen: #7e7e7e;
+$gris-footer: #353535;

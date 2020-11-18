@@ -1,17 +1,76 @@
-/* Error: Undefined mixin.
- *   ,
- * 1 | @include resetcss;
- *   | ^^^^^^^^^^^^^^^^^
- *   '
- *   sass\main.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 1 \2502  @include resetcss;\d\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 1:1  root stylesheet";
+@charset "UTF-8";
+/* Enlever l'unité */
+/* Convertir pixel en rem */
+/* Convertir pixel en em */
+/* Convertir pixel en % */
+/* Convertir pixel en vw */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("essai/roboto-v20-latin-regular-webfont.woff2") format("woff2"), url("essai/roboto-v20-latin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("essai/shrikhand-v6-latin-regular-webfont.woff2") format("woff2"), url("essai/vshrikhand-v6-latin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "robotoregular", sans-serif;
+  font-size: 1em;
+}
+
+h1 {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

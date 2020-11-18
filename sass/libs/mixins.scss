@@ -1,4 +1,21 @@
-//Enlever toutes les valeurs de base
+// Enlever toutes les valeurs de base
 @mixin resetcss {
     html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+}
+// Fonts
+@mixin fonts {
+    @font-face {
+        font-family: 'robotoregular';
+        src: url('essai/roboto-v20-latin-regular-webfont.woff2') format('woff2'),
+             url('essai/roboto-v20-latin-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'shrikhandregular';
+        src: url('essai/shrikhand-v6-latin-regular-webfont.woff2') format('woff2'),
+             url('essai/vshrikhand-v6-latin-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
 }
