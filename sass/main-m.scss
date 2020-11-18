@@ -4,4 +4,9 @@
 @import "libs/functions.scss";
 
 @media #{$mobile-up} {
+    .fonctionnement {
+        & &--flex {
+           flex-direction: column;
+        }
+      }
 }

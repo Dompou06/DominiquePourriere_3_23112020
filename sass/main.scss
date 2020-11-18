@@ -11,6 +11,8 @@ body {
     font-family: 'robotoregular', sans-serif; 
     font-size: em(16, 16);
 }
+a {text-decoration: none;
+color: inherit;}
 h1{display: none;}
 h2{
     font-size: em(23, 16);
@@ -114,8 +116,57 @@ header {
   }
 }
 .btn {
+    margin-top: em(30.8, 16);
     @include button;
     @include degrade;
-    outline:none;
-    box-shadow: rgba($gris-moyen, 0.3) 0 em(4, 16) em(10, 16);
-  } 
+    &:hover {
+     @include button__hover;
+     @include degrade__hover;   
+    }
+}   
+.fonctionnement {
+    & h2 {
+    padding-left: vw(20.1, 375);}
+    & &--flex {
+        @include flexbox; 
+    }
+  }
+  .choix {
+    @include flexbox;
+    padding-right: purcent(19.3);
+    & :nth-child(1){
+      font-size: em(9.2, 16);
+      text-align: center;
+    }
+    & :nth-child(2) {
+      @include flexbox;
+      height: em(74, 16);
+      width: purcent(305.7);
+      line-height: em(74, 16);
+      margin: 0 0 em(24.2, 16) purcent(9.2) * -1;
+      padding-left: purcent(34);
+      background-color: $gris-section;
+      border-radius: em(25, 16);
+      box-shadow: rgba($gris-moyen, 0.3) 0 0 em(10, 16);
+      & :nth-child(1) {
+        font-size: em(19.7, 16);
+        color: $gris-moyen;
+        line-height: 3.2em;
+      }
+    & :nth-child(2) {
+      font-weight: 700;
+      background: transparent;
+      box-shadow: none;
+      }
+    }
+  }  .choixn {
+    width: 23.3px;
+    height: 23.3px;
+    background: $primaire;
+    margin: 23.3px 0 0 purcent(20.4);
+    line-height: 23.3px;
+    font-weight: 700;   
+    color: white;
+    border-radius: 50%;
+    z-index: 5;
+  }

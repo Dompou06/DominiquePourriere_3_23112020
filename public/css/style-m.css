@@ -4,5 +4,10 @@
 /* Convertir pixel en em */
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
+@media only screen and (max-width: 767px) {
+  .fonctionnement .fonctionnement--flex {
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=style-m.css.map */
