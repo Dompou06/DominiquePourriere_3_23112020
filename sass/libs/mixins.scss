@@ -44,3 +44,8 @@
     display: -webkit-flex; //Safari
 }
 @mixin fj-c__center {justify-content: center;}
+@mixin degrade ($degre: 170deg, $color1 : $secondaire, $color2: $primaire){
+    background: linear-gradient($degre, $color1, $color2);
+    background: -moz-linear-gradient($degre, $color1, $color2);
+    background: -webkit-linear-gradient($degre - 240, $color1, $color2);
+}

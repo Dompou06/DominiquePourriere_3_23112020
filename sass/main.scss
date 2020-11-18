@@ -113,3 +113,9 @@ header {
     padding: em(21.7, 16) 15vw 0 15vw;
   }
 }
+.btn {
+    @include button;
+    @include degrade;
+    outline:none;
+    box-shadow: rgba($gris-moyen, 0.3) 0 em(4, 16) em(10, 16);
+  } 
