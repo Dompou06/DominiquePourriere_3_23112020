@@ -19,3 +19,28 @@
         font-style: normal;
       }
 }
+// Loader
+@mixin loader {
+    .load-spinner--loader div:nth-child(1) {
+        transform: rotate(0deg);
+        animation-delay: ($loader-timer + .1) * -1;
+      }
+    @for $i from 2 through 11 {
+        .load-spinner--loader div:nth-child(#{$i}) {
+            transform: rotate($loader * ($i - 1));
+        animation-delay: ($loader-timer - (($i - 2) / 10)) * -1;
+        }
+    }
+    .load-spinner--loader div:nth-child(12) {         
+        transform: rotate($loader * 11);
+        animation-delay: 0s;
+        }
+
+}
+// Flexbox
+@mixin flexbox {
+    display: flex;
+    display: -webkit-box; //Safari
+    display: -webkit-flex; //Safari
+}
+@mixin fj-c__center {justify-content: center;}

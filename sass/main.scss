@@ -2,6 +2,10 @@
 @import "libs/mixins.scss";
 @import "libs/functions.scss";
 
+@media #{$mobile-up} {
+}
+
+
 
 @include resetcss;
 @include fonts;
@@ -10,3 +14,104 @@ body {
     font-size: em(16, 16);
 }
 h1{display: none;}
+h2{
+    font-size: em(23, 16);
+    font-weight: 700;
+  }
+.load-spinner{
+    position: fixed;
+    margin-top: -100vh;
+    width: 100vw;
+    height: 100vh;
+    background: $gris-footer;
+    opacity: .9;
+    z-index: 150;
+    animation: fadein 3s;
+    & &--loader {
+       display: inline-block;
+       position: relative;
+       height: em(80, 16);
+       width: em(80, 16);
+       margin-top: em(300, 16);
+       margin-left: purcen(45);
+       color: $gris-section;
+       & div {
+        transform-origin: em(40, 16);
+        animation: anim-loader 1.5s linear infinite;
+      }
+      & div::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: em(15, 16);
+        left: em(50, 16);
+        width: em(7, 16);
+        height: em(7, 16);
+        border-radius: purcen(50);
+        background: #fff;
+      }
+    }
+}
+@include loader;
+@keyframes fadein {
+    0% {
+     margin-top: 0;
+    }
+    99% {
+     margin-top: 0;
+    }
+    100% {
+      margin-top: -100vh;
+    }
+}
+@keyframes anim-loader {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+header {
+    @include flexbox;
+    @include fj-c__center;
+    text-align: center;
+    height: em(52, 16);
+}
+.localisation {
+    @include flexbox;
+    @include fj-c__center;
+    height: em(50, 16);
+    width: 100%;
+    background-color: $gris-input;
+    box-shadow: 0 em(4, 16) em(4, 16) 0 $gris-top inset;
+    & &--picto {  
+        width: em(29.7,16);
+        line-height: em(52, 16);
+        font-size: rem(16.5, 16);
+    }
+    & &--quartier {
+        width: em(134.7, 16);
+        height: em(50, 16);
+        border: 0 $transparent;
+        background: $transparent;
+        color: #000;
+        font-weight: 700;
+        font-size: rem(16, 16);
+        line-height: em(16, 16);
+        &:focus {
+            outline: none;
+          }
+    }
+}
+.presentation {
+  background-color: $gris-section;
+  padding: em(42, 16) 0 em(57, 16) 0;
+  text-align: center;
+  & h2 {
+    padding: 0 25vw 0 25vw;
+  }
+  & p {
+    padding: em(21.7, 16) 15vw 0 15vw;
+  }
+}
