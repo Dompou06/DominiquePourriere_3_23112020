@@ -1,0 +1,25 @@
+//Pour mobile
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+
+@media #{$mobile-up} {
+    .fonctionnement {
+        padding-left: 5.4vw;
+        & &--flex {
+           flex-direction: column;
+            height: em(270, $tbase);
+            width: 89.2vw;
+        }    
+    }
+    .choix {
+      & &--intitule {
+          width: 83.8vw;
+          padding-left: 10.4vw;
+        & :nth-child(2) {
+            margin-left: 5.5vw;
+        }
+      }
+    }
+
+}

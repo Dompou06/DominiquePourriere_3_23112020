@@ -44,3 +44,26 @@
     display: -webkit-flex; //Safari
 }
 @mixin fj-c__center {justify-content: center;}
+@mixin button {
+    height: em(50, 16);
+    font-weight: 700;
+    border: 0;
+    color: #fff;
+    padding: 0 em(19, 16) 0 em(19, 16);
+    border-radius: em(25, 16);
+    outline:none;
+    box-shadow: rgba($gris-moyen, 0.3) 0 em(4, 16) em(10, 16);
+}
+@mixin button__hover {
+    box-shadow: rgba(darken($gris-moyen, 50%), 0.3) 0 em(4, 16) em(10, 16);
+}
+@mixin degrade ($degre: 170deg, $color1 : $secondaire, $color2: $primaire){
+    background: linear-gradient($degre, $color1, $color2);
+    background: -moz-linear-gradient($degre, $color1, $color2);
+    background: -webkit-linear-gradient($degre - 240, $color1, $color2);
+}
+@mixin degrade__hover ($degre: 170deg, $color1 : lighten($secondaire, 10%), $color2: lighten($primaire, 10%)){
+    background: linear-gradient($degre, $color1, $color2);
+    background: -moz-linear-gradient($degre, $color1, $color2);
+    background: -webkit-linear-gradient($degre - 240, $color1, $color2);
+  }

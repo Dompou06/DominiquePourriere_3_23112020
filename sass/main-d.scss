@@ -2,6 +2,20 @@
 @import "libs/mixins.scss";
 @import "libs/functions.scss";
 
-@media #{$desktop-up} {
-    body {background: green;}
+@media #{$desktop-up} {    
+    .fonctionnement {
+      padding-left: 2.7vw;
+      & &--flex {
+         width: 94.6vw;
+     } 
+  }
+    .choix {
+      & &--intitule {
+          width: 27vw;
+          padding-left: 2.4vw;
+          & :nth-child(2) {
+            margin-left: -1.5vw;
+          }
+      }
+    }
 }
