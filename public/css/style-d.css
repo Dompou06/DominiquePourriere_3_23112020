@@ -5,8 +5,19 @@
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
 @media only screen and (min-width: 992px) {
-  body {
-    background: green;
+  .fonctionnement {
+    padding-left: 2.7vw;
+  }
+  .fonctionnement .fonctionnement--flex {
+    width: 94.6vw;
+  }
+
+  .choix .choix--intitule {
+    width: 27vw;
+    padding-left: 2.4vw;
+  }
+  .choix .choix--intitule :nth-child(2) {
+    margin-left: -1.5vw;
   }
 }
 

@@ -9,11 +9,13 @@
 @include fonts;
 body {
     font-family: 'robotoregular', sans-serif; 
-    font-size: em(16, 16);
+    font-size: em(16, $tbase);
 }
+a {text-decoration: none;
+color: inherit;}
 h1{display: none;}
 h2{
-    font-size: em(23, 16);
+    font-size: em(23, $tbase);
     font-weight: 700;
   }
 .load-spinner{
@@ -28,23 +30,23 @@ h2{
     & &--loader {
        display: inline-block;
        position: relative;
-       height: em(80, 16);
-       width: em(80, 16);
-       margin-top: em(300, 16);
+       height: em(80, $tbase);
+       width: em(80, $tbase);
+       margin-top: em(300, $tbase);
        margin-left: purcen(45);
        color: $gris-section;
        & div {
-        transform-origin: em(40, 16);
+        transform-origin: em(40, $tbase);
         animation: anim-loader 1.5s linear infinite;
       }
       & div::after {
         content: " ";
         display: block;
         position: absolute;
-        top: em(15, 16);
-        left: em(50, 16);
-        width: em(7, 16);
-        height: em(7, 16);
+        top: em(15, $tbase);
+        left: em(50, $tbase);
+        width: em(7, $tbase);
+        height: em(7, $tbase);
         border-radius: purcen(50);
         background: #fff;
       }
@@ -74,29 +76,29 @@ header {
     @include flexbox;
     @include fj-c__center;
     text-align: center;
-    height: em(52, 16);
+    height: em(52, $tbase);
 }
 .localisation {
     @include flexbox;
     @include fj-c__center;
-    height: em(50, 16);
+    height: em(50, $tbase);
     width: 100%;
     background-color: $gris-input;
-    box-shadow: 0 em(4, 16) em(4, 16) 0 $gris-top inset;
+    box-shadow: 0 em(4, $tbase) em(4, $tbase) 0 $gris-top inset;
     & &--picto {  
-        width: em(29.7,16);
-        line-height: em(52, 16);
-        font-size: rem(16.5, 16);
+        width: em(29.7, $tbase);
+        line-height: em(52, $tbase);
+        font-size: rem(16.5, $tbase);
     }
     & &--quartier {
-        width: em(134.7, 16);
-        height: em(50, 16);
+        width: em(134.7, $tbase);
+        height: em(50, $tbase);
         border: 0 $transparent;
         background: $transparent;
         color: #000;
         font-weight: 700;
-        font-size: rem(16, 16);
-        line-height: em(16, 16);
+        font-size: rem(16, $tbase);
+        line-height: em(16, $tbase);
         &:focus {
             outline: none;
           }
@@ -104,12 +106,74 @@ header {
 }
 .presentation {
   background-color: $gris-section;
-  padding: em(42, 16) 0 em(57, 16) 0;
+  padding: em(42, $tbase) 0 em(57, $tbase) 0;
   text-align: center;
   & h2 {
     padding: 0 25vw 0 25vw;
   }
   & p {
-    padding: em(21.7, 16) 15vw 0 15vw;
+    padding: em(21.7, $tbase) 15vw 0 15vw;
   }
 }
+.btn {
+    margin-top: em(30.8, $tbase);
+    @include button;
+    @include degrade;
+    &:hover {
+     @include button__hover;
+     @include degrade__hover;   
+    }
+}   
+.fonctionnement {
+    width: 100vw;
+    margin-top: em(48.4, $tbase);
+    & &--flex {
+        @include flexbox;
+        justify-content: space-between; 
+    }
+  }
+  .choix {
+    @include flexbox;
+    align-items: center;
+    margin-top: em(31.7, $tbase);
+    & &--n {
+        width: em(24.6, $tbase);
+        height: em(24.6, $tbase);
+        font-weight: 800;
+        text-align: center;
+        color: #fff;
+        line-height: em(24.6, $tbase);
+        background: $primaire;
+        border-radius: 50%;
+        z-index: 5;
+    }
+    & &--intitule {
+      @include flexbox;
+      align-items: center;
+        height: em(74, $tbase);
+        margin-left: (em(24.6, $tbase) / 2) * -1;
+        border-radius: em(25, $tbase);
+        background: $gris-section;
+        box-shadow: rgba($gris-moyen, 0.3) 0 0 em(10, $tbase);
+      & :nth-child(1) {
+        width: 4.7vw;
+        font-size: em(17, $tbase);
+        color: $gris-moyen;
+      }
+      & :nth-child(2) {
+        margin-left: 5.5vw;
+        font-weight: 700;
+      }    
+      }
+  }
+  
+  .choix:hover {
+    & :nth-child(2) {
+      background-color: $gris-hover;
+      & :nth-child(1) {
+        color: $primaire;
+      }
+    }
+  }
+
+ 

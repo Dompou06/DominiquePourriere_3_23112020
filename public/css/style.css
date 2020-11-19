@@ -69,6 +69,11 @@ body {
   font-size: 1em;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   display: none;
 }
@@ -240,6 +245,84 @@ header {
 }
 .presentation p {
   padding: 1.35625em 15vw 0 15vw;
+}
+
+.btn {
+  margin-top: 1.925em;
+  height: 3.125em;
+  font-weight: 700;
+  border: 0;
+  color: #fff;
+  padding: 0 1.1875em 0 1.1875em;
+  border-radius: 1.5625em;
+  outline: none;
+  box-shadow: rgba(126, 126, 126, 0.3) 0 0.25em 0.625em;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background: -moz-linear-gradient(170deg, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
+}
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0.25em 0.625em;
+  background: linear-gradient(170deg, #fface8, #ae80e5);
+  background: -moz-linear-gradient(170deg, #fface8, #ae80e5);
+  background: -webkit-linear-gradient(-70deg, #fface8, #ae80e5);
+}
+
+.fonctionnement {
+  width: 100vw;
+  margin-top: 3.025em;
+}
+.fonctionnement .fonctionnement--flex {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+
+.choix {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  align-items: center;
+  margin-top: 1.98125em;
+}
+.choix .choix--n {
+  width: 1.5375em;
+  height: 1.5375em;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5375em;
+  background: #9356DC;
+  border-radius: 50%;
+  z-index: 5;
+}
+.choix .choix--intitule {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  align-items: center;
+  height: 4.625em;
+  margin-left: -0.76875em;
+  border-radius: 1.5625em;
+  background: #f6f6f6;
+  box-shadow: rgba(126, 126, 126, 0.3) 0 0 0.625em;
+}
+.choix .choix--intitule :nth-child(1) {
+  width: 4.7vw;
+  font-size: 1.0625em;
+  color: #7e7e7e;
+}
+.choix .choix--intitule :nth-child(2) {
+  margin-left: 5.5vw;
+  font-weight: 700;
+}
+
+.choix:hover :nth-child(2) {
+  background-color: #f5edff;
+}
+.choix:hover :nth-child(2) :nth-child(1) {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
