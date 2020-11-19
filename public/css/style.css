@@ -278,7 +278,6 @@ header {
   display: -webkit-box;
   display: -webkit-flex;
   align-items: center;
-  margin-top: 1.98125em;
 }
 .choix .choix--n {
   width: 1.5375em;
@@ -329,7 +328,6 @@ section {
 }
 section h2 {
   width: 100vw;
-  padding-bottom: 1.45625em;
 }
 section article {
   display: flex;
@@ -337,7 +335,6 @@ section article {
   display: -webkit-flex;
 }
 section article figure {
-  height: 15.6875em;
   border-radius: 0.875em;
   box-shadow: rgba(126, 126, 126, 0.3) 0 0.25em 0.625em;
   margin-bottom: 1.14375em;
@@ -349,7 +346,6 @@ section article figure {
   display: -webkit-flex;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  height: 10.84375em;
   width: 100%;
   overflow: hidden;
   background: green;

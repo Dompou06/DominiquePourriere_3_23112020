@@ -37,8 +37,11 @@
   }
 
   section {
-    padding: 0.75625em 0 0.75625em 2.7vw;
+    padding: 0.625em 0 0.75625em 2.7vw;
     margin-top: 0.75625em;
+  }
+  section h2 {
+    padding-bottom: 0.4375em;
   }
   section article {
     flex-wrap: nowrap;
@@ -46,7 +49,12 @@
     justify-content: space-between;
   }
   section article figure {
+    height: 7.8125em;
     width: 21vw;
+  }
+
+  .figure--flex {
+    height: 5.41875em;
   }
 
   .coeur {
@@ -56,7 +64,7 @@
 
   footer {
     width: 100vw;
-    padding: 0.875em 4.8vw 1.5em 2.4vw;
+    padding: 0.875em 4.8vw 0.875em 2.4vw;
   }
   footer p {
     display: flex;

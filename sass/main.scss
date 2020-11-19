@@ -129,7 +129,6 @@ header {
   .choix {
     @include flexbox;
     align-items: center;
-    margin-top: em(31.7, $tbase);
     & &--n {
         width: em(24.6, $tbase);
         height: em(24.6, $tbase);
@@ -175,12 +174,10 @@ header {
     background: $gris-section;
     & h2 {
       width: 100vw;
-      padding-bottom: em(23.3, $tbase);
     }
     & article {
       @include flexbox;
       & figure {
-        height: em(251, $tbase);
         border-radius: em(14, $tbase);
         box-shadow: rgba($gris-moyen, 0.3) 0 em(4, $tbase) em(10, $tbase);
         margin-bottom: em(18.3, $tbase);
@@ -191,7 +188,6 @@ header {
       @include flexbox;
       flex-wrap: nowrap;
       justify-content: flex-end;
-      height: em(173.5, $tbase);
       width: 100%;
       overflow: hidden;
       background: green;

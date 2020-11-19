@@ -24,11 +24,11 @@
         }    
     }
     .choix {
+        margin-top: em(31.7, $tbase);
       & &--intitule {
           width: 83.8vw;
           height: em(74, $tbase);
           padding-left: 10.4vw;
-          margin-top: em(31.7, $tbase);
           & :nth-child(2) {
             margin-left: 5.5vw;
         }
@@ -38,12 +38,19 @@
 section {
     margin-top: em(89.8, $tbase);
     padding: em(56.1, $tbase) 0 em(45.1, $tbase) 5.4vw; 
+    & h2 {
+        padding-bottom: em(23.3, $tbase);  
+    }
     & article {
         flex-wrap: wrap;
         & figure {
+            height: em(251, $tbase);
             width: 86.2vw;
         }
       } 
+}
+.figure--flex {
+    height: em(173.5, $tbase);
 }
 .coeur {
     margin-top: em(28.1, 16) * -1;

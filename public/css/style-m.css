@@ -29,11 +29,13 @@
     width: 89.2vw;
   }
 
+  .choix {
+    margin-top: 1.98125em;
+  }
   .choix .choix--intitule {
     width: 83.8vw;
     height: 4.625em;
     padding-left: 10.4vw;
-    margin-top: 1.98125em;
   }
   .choix .choix--intitule :nth-child(2) {
     margin-left: 5.5vw;
@@ -43,11 +45,19 @@
     margin-top: 5.6125em;
     padding: 3.50625em 0 2.81875em 5.4vw;
   }
+  section h2 {
+    padding-bottom: 1.45625em;
+  }
   section article {
     flex-wrap: wrap;
   }
   section article figure {
+    height: 15.6875em;
     width: 86.2vw;
+  }
+
+  .figure--flex {
+    height: 10.84375em;
   }
 
   .coeur {
