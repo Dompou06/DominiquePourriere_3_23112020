@@ -27,6 +27,8 @@
   }
   section article {
     flex-wrap: nowrap;
+    width: 94.6vw;
+    justify-content: space-between;
   }
   section article figure {
     width: 21vw;

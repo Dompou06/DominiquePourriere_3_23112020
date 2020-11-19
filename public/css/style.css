@@ -67,6 +67,9 @@ td:not([align]), th:not([align]) {
 body {
   font-family: "robotoregular", sans-serif;
   font-size: 1em;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -379,6 +382,22 @@ section article figure {
 #img-pg {
   transform: scale(1.04, 1.3) translate(-0.30625em, -1.25em);
   filter: contrast(110%) brightness(110%) opacity(90%);
+}
+
+#img-ne {
+  transform: scale(1, 0.7) translate(0, -20.3125em);
+  height: 36.25em;
+  filter: contrast(110%) brightness(105%) opacity(90%);
+}
+
+#img-af {
+  transform: scale(1.05, 1.45) translate(0, -1.5625em);
+  filter: contrast(130%) brightness(120%) opacity(90%);
+}
+
+#img-ds {
+  transform: scale(1.05, 1.5) translate(-0.3125em, -1.5625em);
+  filter: brightness(120%) opacity(90%);
 }
 
 figcaption {

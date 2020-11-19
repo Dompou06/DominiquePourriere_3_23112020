@@ -10,6 +10,9 @@
 body {
     font-family: 'robotoregular', sans-serif; 
     font-size: em(16, $tbase);
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 a {text-decoration: none;
 color: inherit;}
@@ -221,7 +224,19 @@ header {
     transform: scale(1.04, 1.3) translate(em(4.9, $tbase) * -1, em(20, $tbase) * -1);
    filter: contrast(110%) brightness(110%) opacity(90%);
   }
-  
+  #img-ne {
+    transform: scale(1, 0.7) translate(0, em(325, 16) * -1);
+    height: em(580, 16);
+    filter: contrast(110%) brightness(105%) opacity(90%);
+  }
+  #img-af {
+    transform: scale(1.05, 1.45) translate(0, em(25, 16) * -1);
+    filter: contrast(130%) brightness(120%) opacity(90%);
+  }
+  #img-ds {
+    transform: scale(1.05, 1.5) translate(em(5, 16) * -1, em(25, 16) * -1);
+    filter: brightness(120%) opacity(90%);
+  }
   figcaption {
     margin: 0 em(24, $tbase) 0 em(14.7, $tbase);
     & :nth-child(1) {
