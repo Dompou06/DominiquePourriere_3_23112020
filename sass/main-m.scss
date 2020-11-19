@@ -7,6 +7,12 @@
     .fonctionnement {
         & &--flex {
            flex-direction: column;
-        }
+        }    
+    }
+    .choix {
+      & &--intitule {
+          width: 83.8vw;
       }
+    }
+
 }

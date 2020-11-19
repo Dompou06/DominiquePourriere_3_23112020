@@ -268,8 +268,10 @@ header {
   background: -webkit-linear-gradient(-70deg, #fface8, #ae80e5);
 }
 
-.fonctionnement h2 {
-  padding-left: 5.36vw;
+.fonctionnement {
+  padding-left: 5.4vw;
+  width: 100vw;
+  background: blue;
 }
 .fonctionnement .fonctionnement--flex {
   display: flex;
@@ -281,42 +283,27 @@ header {
   display: flex;
   display: -webkit-box;
   display: -webkit-flex;
-  padding-right: 5.1466666667%;
 }
-.choix :nth-child(1) {
-  font-size: 0.575em;
-  text-align: center;
+.choix .choix--n {
+  width: 2.9125em;
+  height: 2.9125em;
+  background: #9356DC;
+  border-radius: 50%;
+  z-index: 5;
 }
-.choix :nth-child(2) {
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  height: 4.625em;
-  width: 81.52%;
-  line-height: 4.625em;
-  margin: 0 0 1.5125em -2.4533333333%;
-  padding-left: 9.0666666667%;
-  background-color: #f6f6f6;
-  border-radius: 1.5625em;
-  box-shadow: rgba(126, 126, 126, 0.3) 0 0 0.625em;
-}
-.choix :nth-child(2) :nth-child(1) {
-  font-size: 1.23125em;
-  color: #7e7e7e;
-  line-height: 3.2em;
-}
-.choix :nth-child(2) :nth-child(2) {
-  font-weight: 700;
-  background: transparent;
-  box-shadow: none;
+.choix .choix--intitule {
+  background: red;
+  margin-left: -1.45625em;
 }
 
 .choixn {
-  width: 23.3px;
-  height: 23.3px;
+  width: 2.9125em;
+  height: 2.9125em;
+  font-size: 0.75rem;
+  text-align: center;
   background: #9356DC;
-  margin: 23.3px 0 0 5.44%;
-  line-height: 23.3px;
+  margin: 1.45625em 0 0 0;
+  line-height: 2.9125em;
   font-weight: 700;
   color: white;
   border-radius: 50%;

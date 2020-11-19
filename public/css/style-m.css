@@ -8,6 +8,10 @@
   .fonctionnement .fonctionnement--flex {
     flex-direction: column;
   }
+
+  .choix .choix--intitule {
+    width: 83.8vw;
+  }
 }
 
 /*# sourceMappingURL=style-m.css.map */

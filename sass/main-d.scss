@@ -4,4 +4,9 @@
 
 @media #{$desktop-up} {
     body {background: green;}
+    .choix {
+      & &--intitule {
+          width: 27vw;
+      }
+    }
 }
