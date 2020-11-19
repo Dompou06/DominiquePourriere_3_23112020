@@ -5,12 +5,21 @@
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
 @media only screen and (max-width: 767px) {
+  .fonctionnement {
+    padding-left: 5.4vw;
+  }
   .fonctionnement .fonctionnement--flex {
     flex-direction: column;
+    height: 16.875em;
+    width: 89.2vw;
   }
 
   .choix .choix--intitule {
     width: 83.8vw;
+    padding-left: 10.4vw;
+  }
+  .choix .choix--intitule :nth-child(2) {
+    margin-left: 5.5vw;
   }
 }
 

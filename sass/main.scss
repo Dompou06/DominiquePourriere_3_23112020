@@ -125,38 +125,46 @@ header {
     }
 }   
 .fonctionnement {
-    padding-left: 5.4vw;
     width: 100vw;
-    background: blue;
+    margin-top: em(48.4, $tbase);
     & &--flex {
-        @include flexbox; 
+        @include flexbox;
+        justify-content: space-between; 
     }
   }
   .choix {
     @include flexbox;
+    align-items: center;
+    margin-top: em(31.7, $tbase);
     & &--n {
-        width: em(46.6, $tbase);
-        height: em(46.6, $tbase);
+        width: em(24.6, $tbase);
+        height: em(24.6, $tbase);
+        font-weight: 800;
+        text-align: center;
+        color: #fff;
+        line-height: em(24.6, $tbase);
         background: $primaire;
         border-radius: 50%;
         z-index: 5;
     }
     & &--intitule {
-        background: red;
-        margin-left: (em(46.6, $tbase) / 2) * -1;
-    }
+      @include flexbox;
+      align-items: center;
+        height: em(74, $tbase);
+        margin-left: (em(24.6, $tbase) / 2) * -1;
+        border-radius: em(25, $tbase);
+        background: $gris-section;
+        box-shadow: rgba($gris-moyen, 0.3) 0 0 em(10, $tbase);
+      & :nth-child(1) {
+        width: 4.7vw;
+        font-size: em(17, $tbase);
+        color: $gris-moyen;
+      }
+      & :nth-child(2) {
+        margin-left: 5.5vw;
+        font-weight: 700;
+      }    
+      }
   }
 
-  .choixn {
-    width: em(46.6, $tbase);
-    height: em(46.6, $tbase);
-    font-size: rem(12, $tbase);
-    text-align: center;
-    background: $primaire;
-    margin: em(23.3, $tbase) 0 0 0;
-    line-height: em(46.6, $tbase);
-    font-weight: 700;   
-    color: white;
-    border-radius: 50%;
-    z-index: 5;
-  }
+ 
