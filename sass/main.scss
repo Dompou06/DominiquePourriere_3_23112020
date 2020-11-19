@@ -166,5 +166,14 @@ header {
       }    
       }
   }
+  
+  .choix:hover {
+    & :nth-child(2) {
+      background-color: $gris-hover;
+      & :nth-child(1) {
+        color: $primaire;
+      }
+    }
+  }
 
  
