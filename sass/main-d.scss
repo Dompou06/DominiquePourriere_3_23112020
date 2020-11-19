@@ -4,6 +4,7 @@
 
 @media #{$desktop-up} {    
     .fonctionnement {
+      margin-top: em(24.2, $tbase);
       padding-left: 2.7vw;
       & &--flex {
          width: 94.6vw;
@@ -18,4 +19,23 @@
           }
       }
     }
+
+section {
+  padding: em(24.2, $tbase) 0 em(24.2, $tbase) 2.7vw;
+  margin-top: em(24.2, $tbase); 
+  & article {
+      flex-wrap: nowrap;
+      & figure {
+          width: 21vw;
+      }
+    }
+}
+.coeur {
+  margin-top: em(23.1, 16) * -1;
+  padding-right: em(10.1, $tbase);
+}
+
+
+
+
 }
