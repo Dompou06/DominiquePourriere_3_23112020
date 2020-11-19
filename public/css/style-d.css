@@ -6,6 +6,7 @@
 /* Convertir pixel en vw */
 @media only screen and (min-width: 992px) {
   .fonctionnement {
+    margin-top: 1.5125em;
     padding-left: 2.7vw;
   }
   .fonctionnement .fonctionnement--flex {
@@ -18,6 +19,22 @@
   }
   .choix .choix--intitule :nth-child(2) {
     margin-left: -1.5vw;
+  }
+
+  section {
+    padding: 1.5125em 0 1.5125em 2.7vw;
+    margin-top: 1.5125em;
+  }
+  section article {
+    flex-wrap: nowrap;
+  }
+  section article figure {
+    width: 21vw;
+  }
+
+  .coeur {
+    margin-top: -1.44375em;
+    padding-right: 0.63125em;
   }
 }
 

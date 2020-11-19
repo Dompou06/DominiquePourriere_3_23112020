@@ -5,6 +5,7 @@
 
 @media #{$mobile-up} {
     .fonctionnement {
+        margin-top: em(48.4, $tbase);
         padding-left: 5.4vw;
         & &--flex {
            flex-direction: column;
@@ -21,5 +22,20 @@
         }
       }
     }
+
+section {
+    margin-top: em(89.8, $tbase);
+    padding: em(56.1, $tbase) 0 em(45.1, $tbase) 5.4vw; 
+    & article {
+        flex-wrap: wrap;
+        & figure {
+            width: 86.2vw;
+        }
+      } 
+}
+.coeur {
+    margin-top: em(28.1, 16) * -1;
+    padding-right: em(25.1, $tbase);
+}
 
 }
