@@ -2,7 +2,7 @@
 @import "libs/mixins.scss";
 @import "libs/functions.scss";
 
-@media #{$desktop-up} {    
+@media #{$desktop-up} {   
     .fonctionnement {
       margin-top: em(24.2, $tbase);
       padding-left: 2.7vw;
@@ -25,6 +25,8 @@ section {
   margin-top: em(24.2, $tbase); 
   & article {
       flex-wrap: nowrap;
+      width: 94.6vw;
+      justify-content: space-between;
       & figure {
           width: 21vw;
       }
