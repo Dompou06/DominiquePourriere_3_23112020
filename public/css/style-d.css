@@ -5,15 +5,30 @@
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
 @media only screen and (min-width: 992px) {
+  .presentation {
+    padding: 0.625em 0 0.875em 0;
+  }
+  .presentation p {
+    padding-top: 0.3125em;
+  }
+
+  .btn {
+    margin-top: 0.65em;
+  }
+
   .fonctionnement {
-    margin-top: 1.5125em;
+    margin-top: 0.375em;
     padding-left: 2.7vw;
   }
   .fonctionnement .fonctionnement--flex {
     width: 94.6vw;
   }
 
+  .choix {
+    margin-top: 0.625em;
+  }
   .choix .choix--intitule {
+    height: 2.3125em;
     width: 27vw;
     padding-left: 2.4vw;
   }
@@ -22,8 +37,8 @@
   }
 
   section {
-    padding: 1.5125em 0 1.5125em 2.7vw;
-    margin-top: 1.5125em;
+    padding: 0.75625em 0 0.75625em 2.7vw;
+    margin-top: 0.75625em;
   }
   section article {
     flex-wrap: nowrap;
@@ -37,6 +52,18 @@
   .coeur {
     margin-top: -1.44375em;
     padding-right: 0.63125em;
+  }
+
+  footer {
+    width: 100vw;
+    padding: 0.875em 4.8vw 1.5em 2.4vw;
+  }
+  footer p {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-top: -0.8125em;
   }
 }
 

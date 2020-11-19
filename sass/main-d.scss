@@ -2,16 +2,25 @@
 @import "libs/mixins.scss";
 @import "libs/functions.scss";
 
-@media #{$desktop-up} {   
-    .fonctionnement {
-      margin-top: em(24.2, $tbase);
+@media #{$desktop-up} {       
+  .presentation {
+      padding: em(10, $tbase) 0 em(14, $tbase) 0;
+      & p {
+       padding-top: em(5, $tbase);
+      }
+   }  
+   .btn {margin-top: em(10.4, $tbase);}
+   .fonctionnement {
+      margin-top: em(6, $tbase);
       padding-left: 2.7vw;
       & &--flex {
          width: 94.6vw;
      } 
   }
     .choix {
+      margin-top: em(10, $tbase);
       & &--intitule {
+          height: em(37, $tbase);
           width: 27vw;
           padding-left: 2.4vw;
           & :nth-child(2) {
@@ -21,8 +30,8 @@
     }
 
 section {
-  padding: em(24.2, $tbase) 0 em(24.2, $tbase) 2.7vw;
-  margin-top: em(24.2, $tbase); 
+  padding: em(12.1, $tbase) 0 em(12.1, $tbase) 2.7vw;
+  margin-top: em(12.1, $tbase); 
   & article {
       flex-wrap: nowrap;
       width: 94.6vw;
@@ -36,7 +45,15 @@ section {
   margin-top: em(23.1, 16) * -1;
   padding-right: em(10.1, $tbase);
 }
-
+footer {
+  width: 100vw;
+  padding: em(14, $tbase) 4.8vw em(24, $tbase) 2.4vw;
+  & p {
+    @include flexbox;
+    justify-content: space-between;
+    margin-top: em(13, $tbase) * -1;
+  }
+}
 
 
 

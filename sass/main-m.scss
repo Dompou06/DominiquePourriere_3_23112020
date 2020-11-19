@@ -3,7 +3,17 @@
 @import "libs/mixins.scss";
 @import "libs/functions.scss";
 
-@media #{$mobile-up} {
+@media #{$mobile-up} {      
+    .presentation {
+        padding: em(42, $tbase) 0 em(57, $tbase) 0;
+        & h2 {
+        padding: 0 25vw 0 25vw;
+         }
+        & p {
+         padding: em(21.7, $tbase) 15vw 0 15vw;
+        }
+     }
+     .btn {margin-top: em(30.8, $tbase);}
     .fonctionnement {
         margin-top: em(48.4, $tbase);
         padding-left: 5.4vw;
@@ -16,8 +26,10 @@
     .choix {
       & &--intitule {
           width: 83.8vw;
+          height: em(74, $tbase);
           padding-left: 10.4vw;
-        & :nth-child(2) {
+          margin-top: em(31.7, $tbase);
+          & :nth-child(2) {
             margin-left: 5.5vw;
         }
       }
@@ -37,5 +49,8 @@ section {
     margin-top: em(28.1, 16) * -1;
     padding-right: em(25.1, $tbase);
 }
-
+footer {   
+    padding: em(14, $tbase) 0 em(24, $tbase) 10.4vw;
+    & p {line-height: em(25, $tbase);}
+}
 }

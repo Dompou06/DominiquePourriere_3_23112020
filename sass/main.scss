@@ -109,17 +109,9 @@ header {
 }
 .presentation {
   background-color: $gris-section;
-  padding: em(42, $tbase) 0 em(57, $tbase) 0;
   text-align: center;
-  & h2 {
-    padding: 0 25vw 0 25vw;
-  }
-  & p {
-    padding: em(21.7, $tbase) 15vw 0 15vw;
-  }
 }
 .btn {
-    margin-top: em(30.8, $tbase);
     @include button;
     @include degrade;
     &:hover {
@@ -277,3 +269,12 @@ header {
       opacity: 1;
   }
 }
+footer {
+  background-color: $gris-footer;
+  color: #fff;
+}
+
+svg path {
+  fill: #fff !important;
+  transform: scale(0.55);
+  }
