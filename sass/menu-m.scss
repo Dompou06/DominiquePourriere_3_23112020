@@ -3,6 +3,9 @@
 @import "libs/functions.scss";
 
 @media #{$mobile-up} {
+.img-menu {
+        height: em(258, $tbase);
+}    
 .m-pg {
    transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(31, 16) * -1);
 }
@@ -12,6 +15,9 @@
     }
     & article {
         width: 100%;
+        & h4 {
+            padding-bottom: em(2.9, $tbase);
+          }
     }
     & .recette {
         & .plat {

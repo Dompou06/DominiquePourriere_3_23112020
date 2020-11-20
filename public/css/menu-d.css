@@ -5,15 +5,24 @@
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
 @media only screen and (min-width: 992px) {
+  header {
+    height: 5vh;
+  }
+
+  .img-menu {
+    height: 35vh;
+  }
+
   .m-pg {
     transform: scale(1.04, 0.87) translate(-0.30625em, -18.75em);
   }
 
-  .section-menu h2 {
-    margin-top: 0.3125em;
-  }
   .section-menu article {
     width: 33%;
+    height: 48vh;
+  }
+  .section-menu article h4 {
+    padding-bottom: 0.0625em;
   }
   .section-menu .recette .plat {
     width: 93%;

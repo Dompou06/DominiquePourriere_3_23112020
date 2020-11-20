@@ -5,6 +5,10 @@
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
 @media only screen and (max-width: 767px) {
+  .img-menu {
+    height: 16.125em;
+  }
+
   .m-pg {
     transform: scale(1.04, 0.87) translate(-0.30625em, -1.9375em);
   }
@@ -14,6 +18,9 @@
   }
   .section-menu article {
     width: 100%;
+  }
+  .section-menu article h4 {
+    padding-bottom: 0.18125em;
   }
   .section-menu .recette .plat {
     width: 93%;

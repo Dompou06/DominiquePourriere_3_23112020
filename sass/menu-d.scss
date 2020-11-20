@@ -3,15 +3,20 @@
 @import "libs/functions.scss";
 
 @media #{$desktop-up} {
+header {height: 5vh;}
+.img-menu {
+    height: 35vh;
+}  
 .m-pg {
    transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(300, 16) * -1);
 }
 .section-menu {
-    & h2 {
-        margin-top: em(5, $tbase);
-    }
     & article {
         width: 33%;
+        height: 48vh;
+        & h4 {
+            padding-bottom: em(1, $tbase);
+          }
     }
     & .recette {
         & .plat {
@@ -36,7 +41,6 @@
             transform: translate(-2em);
         }
 }
-
 
 
 }
