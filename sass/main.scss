@@ -206,16 +206,16 @@ header {
       }
   } 
   #img-pg {
-   filter: contrast(110%) brightness(110%) opacity(90%);
+    @include img-pg;
   }
   #img-ne {
-    filter: contrast(110%) brightness(105%) opacity(90%);
+    @include img-ne;
   }
   #img-af {
-    filter: contrast(130%) brightness(120%) opacity(90%);
+    @include img-af;
   }
   #img-ds {
-    filter: brightness(120%) opacity(90%);
+    @include img-ds;
   }
   .figure--caption {
     & :nth-child(1) {

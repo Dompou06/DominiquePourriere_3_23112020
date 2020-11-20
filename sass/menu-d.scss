@@ -1,0 +1,42 @@
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+
+@media #{$desktop-up} {
+.m-pg {
+   transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(300, 16) * -1);
+}
+.section-menu {
+    & h2 {
+        margin-top: em(5, $tbase);
+    }
+    & article {
+        width: 33%;
+    }
+    & .recette {
+        & .plat {
+            width: 93%;
+        }
+        & .recette-suite {
+            font-size: rem(15, 16);
+            font-stretch: 50%;
+          }
+        & .retour {max-width: 15vw;
+        }
+        }
+    }
+.recette:hover { 
+        & .plat {               
+            width: 85%;
+          & .noretour {
+              width: purcent(167, 290);
+              }
+          }
+        & .coche {
+            transform: translate(-2em);
+        }
+}
+
+
+
+}

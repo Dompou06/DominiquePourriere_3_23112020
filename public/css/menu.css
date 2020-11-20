@@ -1,3 +1,146 @@
+@charset "UTF-8";
+/* Enlever l'unité */
+/* Convertir pixel en rem */
+/* Convertir pixel en em */
+/* Convertir pixel en % */
+/* Convertir pixel en vw */
+.header-menu {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  align-items: center;
+}
+.header-menu :nth-child(2) {
+  width: 2.48125em;
+  text-align: right;
+}
+.header-menu :nth-child(3) {
+  width: 89.4vw;
+  text-align: center;
+  height: 1.41875em;
+}
 
+.img-menu {
+  width: 100vw;
+  height: 16.125em;
+  overflow: hidden;
+}
+
+.m-pg {
+  width: 100vw;
+  filter: contrast(110%) brightness(110%) opacity(90%);
+}
+
+.section-menu {
+  position: relative;
+  border-radius: 2.40625em 2.40625em 0 0;
+  margin-top: -2.09375em;
+  padding-right: 0.6875em;
+  z-index: 10;
+}
+.section-menu h2 {
+  font-family: "shrikhandregular";
+  font-style: italic;
+  font-size: 1.725rem;
+  height: 0;
+  padding-right: 1.25em;
+}
+.section-menu h2 i {
+  float: right;
+  font-size: 1.3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.0625rem;
+}
+.section-menu article {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-direction: column;
+  margin-top: 1.71875em;
+}
+.section-menu article h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 0.18125em;
+}
+.section-menu article .hr {
+  width: 2.5rem;
+  height: 0.18125em;
+  background: #99E2D0;
+}
+.section-menu article .recette {
+  position: relative;
+  width: 95%;
+  margin-top: 0.89375em;
+  background: #fff;
+  border-radius: 0.80625em;
+  box-shadow: rgba(126, 126, 126, 0.3) 0 0.25em 0.625em;
+  overflow: hidden;
+}
+.section-menu article .recette .plat {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.6875em;
+  padding-left: 0.7625em;
+  z-index: 100;
+  transition: width 2s;
+}
+.section-menu article .recette .plat h5 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.05625rem;
+  line-height: 1.39375em;
+  margin: 0.575em 0 0.975em 0;
+}
+.section-menu article .recette .plat .recette-suite {
+  margin-top: -0.975em;
+}
+.section-menu article .recette .plat .prix {
+  margin-top: -0.975em;
+  font-weight: 600;
+}
+.section-menu article .recette .coche {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-left: 100%;
+  padding: 0 4% 0 4%;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.275rem;
+  color: #fff;
+  border-radius: 0 0.6em 0.6em 0;
+  background: #99E2D0;
+  transition: transform 2s;
+}
+.section-menu article .recette .coche :nth-child(1) {
+  display: inline-block;
+}
+
+.recette:hover .plat .noretour {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+.recette:hover .coche :nth-child(1) {
+  animation: rotate 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 /*# sourceMappingURL=menu.css.map */

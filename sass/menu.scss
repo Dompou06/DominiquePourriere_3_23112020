@@ -1,0 +1,138 @@
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+
+.header-menu {
+    @include flexbox;
+    align-items: center;
+    & :nth-child(2) {
+        width: em(39.7, $tbase);
+        text-align: right;
+    }
+    & :nth-child(3) {
+        width: 89.4vw;
+        text-align: center;
+        height: em(22.7, $tbase);
+    }
+}
+.img-menu {
+    width: 100vw;
+    height: em(258, $tbase);
+    overflow: hidden;
+}
+.m-pg {
+    width: 100vw;
+    @include img-pg;
+}
+
+
+
+.section-menu {
+    position: relative;
+    border-radius: em(38.5, 16) em(38.5, 16) 0 0;
+    margin-top: em(33.5, 16) * -1;
+    padding-right: em(11, 16);
+    z-index: 10;
+    & h2 {
+        font-family: 'shrikhandregular';
+        font-style: italic;
+        font-size: rem(27.6, 16);
+        height: 0;
+        padding-right: em(20, 16);
+        & i {
+            float: right;
+            font-size: rem(20.8, 16);
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: rem(1, 16);
+        }
+    }
+    & article {
+        @include flexbox;
+        flex-direction: column;
+        margin-top: em(27.5, $tbase);
+        & h4 {
+            text-transform: uppercase;
+            font-weight: normal;
+            padding-bottom: em(2.9, $tbase);
+          }
+        & .hr {
+            width: rem(40, $tbase);
+            height: em(2.9, 16);
+            background: $tertiaire;
+          }
+        & .recette {
+            position: relative;
+            width: 95%;
+            margin-top: em(14.3, $tbase);
+            background: #fff;
+            border-radius: em(12.9, 16);
+            box-shadow: rgba($gris-moyen, 0.3) 0 em(4, 16) em(10, 16);
+            overflow: hidden;
+            & .plat {
+                @include flexbox;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: em(11, 16);
+                padding-left: em(12.2, $tbase);
+                z-index: 100;
+                transition: width 2s;
+                & h5 {
+                    width: 100%;
+                    font-weight: 700;
+                    font-size: rem(16.9, 16);
+                    line-height: em(22.3, 16);
+                    margin: em(9.2, 16) 0 em(15.6, 16) 0;
+                  }
+                  & .recette-suite {
+                    margin-top: em(15.6, 16) * -1;
+                  }
+                   & .prix {
+                    margin-top: em(15.6, 16) * -1;
+                    font-weight: 600;
+                    }
+            }
+            & .coche {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                margin-left: 100%;
+                padding: 0 4% 0 4%;
+                @include flexbox;
+                justify-content: center;
+                align-items: center;
+                font-size: rem(20.4, 16);
+                color: #fff;
+                border-radius: 0 .6em .6em 0;
+                background: $tertiaire;
+                transition: transform 2s;
+                & :nth-child(1) {
+                  display: inline-block;
+                }
+              }
+        }
+    }
+}
+.recette:hover { 
+    & .plat {
+        & .noretour {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          -ms-text-overflow: ellipsis; 
+        } 
+    }
+    & .coche {  
+      & :nth-child(1) {
+        animation: rotate 3s; 
+      }
+    }
+}
+@keyframes rotate {
+  0% {
+      transform: rotate(-90deg);
+  }  
+  100% {
+    transform: rotate(0deg);
+}
+}

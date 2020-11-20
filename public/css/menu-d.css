@@ -1,3 +1,40 @@
+@charset "UTF-8";
+/* Enlever l'unité */
+/* Convertir pixel en rem */
+/* Convertir pixel en em */
+/* Convertir pixel en % */
+/* Convertir pixel en vw */
+@media only screen and (min-width: 992px) {
+  .m-pg {
+    transform: scale(1.04, 0.87) translate(-0.30625em, -18.75em);
+  }
 
+  .section-menu h2 {
+    margin-top: 0.3125em;
+  }
+  .section-menu article {
+    width: 33%;
+  }
+  .section-menu .recette .plat {
+    width: 93%;
+  }
+  .section-menu .recette .recette-suite {
+    font-size: 0.9375rem;
+    font-stretch: 50%;
+  }
+  .section-menu .recette .retour {
+    max-width: 15vw;
+  }
+
+  .recette:hover .plat {
+    width: 85%;
+  }
+  .recette:hover .plat .noretour {
+    width: 57.5862068966%;
+  }
+  .recette:hover .coche {
+    transform: translate(-2em);
+  }
+}
 
 /*# sourceMappingURL=menu-d.css.map */
