@@ -96,7 +96,7 @@ h2 {
   z-index: 150;
   animation: fadein 3s;
 }
-.load-spinner .load-spinner--loader {
+.load-spinner .load-spinner__loader {
   display: inline-block;
   position: relative;
   height: 5em;
@@ -105,11 +105,11 @@ h2 {
   margin-left: 45%;
   color: #f6f6f6;
 }
-.load-spinner .load-spinner--loader div {
+.load-spinner .load-spinner__loader div {
   transform-origin: 2.5em;
   animation: anim-loader 1.5s linear infinite;
 }
-.load-spinner .load-spinner--loader div::after {
+.load-spinner .load-spinner__loader div::after {
   content: " ";
   display: block;
   position: absolute;
@@ -382,7 +382,7 @@ section article figure {
   filter: brightness(120%) opacity(90%);
 }
 
-figcaption :nth-child(1) {
+.figure--figcaption :nth-child(1) {
   font-weight: 700;
 }
 
@@ -404,7 +404,6 @@ figcaption :nth-child(1) {
 .coeur :nth-child(2) i {
   margin-left: -25px;
   background: -webkit-linear-gradient(#9356DC 5%, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-stroke-width: 0;

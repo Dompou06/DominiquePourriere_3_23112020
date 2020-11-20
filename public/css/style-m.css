@@ -76,13 +76,13 @@
     transform: scale(1.05, 1.5) translate(-0.3125em, -1.5625em);
   }
 
-  figcaption {
+  .figure--figcaption {
     margin: 0 1.5em 0 0.91875em;
   }
-  figcaption :nth-child(1) {
+  .figure--figcaption :nth-child(1) {
     margin-top: 1.3em;
   }
-  figcaption :nth-child(2) {
+  .figure--figcaption :nth-child(2) {
     margin-top: 0.45625em;
   }
 
