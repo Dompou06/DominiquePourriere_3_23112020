@@ -5,6 +5,20 @@
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
 @media only screen and (max-width: 767px) {
+  .presentation {
+    padding: 2.625em 0 3.5625em 0;
+  }
+  .presentation h2 {
+    padding: 0 25vw 0 25vw;
+  }
+  .presentation p {
+    padding: 1.35625em 15vw 0 15vw;
+  }
+
+  .btn {
+    margin-top: 1.925em;
+  }
+
   .fonctionnement {
     margin-top: 3.025em;
     padding-left: 5.4vw;
@@ -15,8 +29,12 @@
     width: 89.2vw;
   }
 
+  .choix {
+    margin-top: 1.98125em;
+  }
   .choix .choix--intitule {
     width: 83.8vw;
+    height: 4.625em;
     padding-left: 10.4vw;
   }
   .choix .choix--intitule :nth-child(2) {
@@ -27,16 +45,59 @@
     margin-top: 5.6125em;
     padding: 3.50625em 0 2.81875em 5.4vw;
   }
+  section h2 {
+    padding-bottom: 1.45625em;
+  }
   section article {
     flex-wrap: wrap;
   }
   section article figure {
+    height: 15.6875em;
     width: 86.2vw;
+  }
+
+  .figure--flex {
+    height: 10.84375em;
+  }
+
+  #img-pg {
+    transform: scale(1.04, 1.3) translate(-0.30625em, -1.25em);
+  }
+
+  #img-ne {
+    transform: scale(1, 2.4) translate(0, -0.6875em);
+  }
+
+  #img-af {
+    transform: scale(1.05, 1.45) translate(0, -1.5625em);
+  }
+
+  #img-ds {
+    transform: scale(1.05, 1.5) translate(-0.3125em, -1.5625em);
+  }
+
+  .figure--figcaption {
+    margin: 0 1.5em 0 0.91875em;
+  }
+  .figure--figcaption :nth-child(1) {
+    margin-top: 1.3em;
+  }
+  .figure--figcaption :nth-child(2) {
+    margin-top: 0.45625em;
   }
 
   .coeur {
     margin-top: -1.75625em;
     padding-right: 1.56875em;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    padding: 0.875em 0 1.5em 5.4vw;
+  }
+  footer p {
+    width: 100%;
+    line-height: 1.5625em;
   }
 }
 
