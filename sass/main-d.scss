@@ -61,7 +61,7 @@ section {
 #img-ds {
   transform: scale(1.05, 1.5) translate(em(5, 16) * -1, em(10, 16) * -1);
 }
-.figure--figcaption {
+.figure--caption {
   margin: 0 em(24, $tbase) 0 em(14.7, $tbase);
   & :nth-child(1) {
     margin-top: em(5, $tbase);

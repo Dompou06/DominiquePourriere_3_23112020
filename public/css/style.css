@@ -382,7 +382,7 @@ section article figure {
   filter: brightness(120%) opacity(90%);
 }
 
-.figure--figcaption :nth-child(1) {
+.figure--caption :nth-child(1) {
   font-weight: 700;
 }
 
