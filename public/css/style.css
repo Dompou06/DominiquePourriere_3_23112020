@@ -348,7 +348,6 @@ section article figure {
   justify-content: flex-end;
   width: 100%;
   overflow: hidden;
-  background: green;
   border-radius: 0.875em 0.875em 0 0;
 }
 .figure--flex :nth-child(1) {
@@ -368,35 +367,23 @@ section article figure {
 }
 
 #img-pg {
-  transform: scale(1.04, 1.3) translate(-0.30625em, -1.25em);
   filter: contrast(110%) brightness(110%) opacity(90%);
 }
 
 #img-ne {
-  transform: scale(1, 0.7) translate(0, -20.3125em);
-  height: 36.25em;
   filter: contrast(110%) brightness(105%) opacity(90%);
 }
 
 #img-af {
-  transform: scale(1.05, 1.45) translate(0, -1.5625em);
   filter: contrast(130%) brightness(120%) opacity(90%);
 }
 
 #img-ds {
-  transform: scale(1.05, 1.5) translate(-0.3125em, -1.5625em);
   filter: brightness(120%) opacity(90%);
 }
 
-figcaption {
-  margin: 0 1.5em 0 0.91875em;
-}
 figcaption :nth-child(1) {
-  margin-top: 1.3em;
   font-weight: 700;
-}
-figcaption :nth-child(2) {
-  margin-top: 0.45625em;
 }
 
 .coeur {
@@ -433,6 +420,9 @@ figcaption :nth-child(2) {
 }
 
 footer {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
   background-color: #353535;
   color: #fff;
 }

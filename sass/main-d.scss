@@ -2,7 +2,8 @@
 @import "libs/mixins.scss";
 @import "libs/functions.scss";
 
-@media #{$desktop-up} {       
+@media #{$desktop-up} {
+  body {height: 100vh;}
   .presentation {
       padding: em(10, $tbase) 0 em(14, $tbase) 0;
       & p {
@@ -40,7 +41,7 @@ section {
       width: 94.6vw;
       justify-content: space-between;
       & figure {
-        height: em(125, $tbase);
+        height: em(140, $tbase);
           width: 21vw;
       }
     }
@@ -48,16 +49,39 @@ section {
 .figure--flex {
   height: em(86.7, $tbase);
 }
+#img-pg {
+  transform: scale(1.04, 1.3) translate(em(4.9, $tbase) * -1, em(10, $tbase) * -1);
+}
+#img-ne {
+  transform: scale(1, 2.4) translate(0, em(5, 16) * -1);
+}
+#img-af {
+  transform: scale(1.05, 1.45) translate(0, em(10, 16) * -1);
+}
+#img-ds {
+  transform: scale(1.05, 1.5) translate(em(5, 16) * -1, em(10, 16) * -1);
+}
+figcaption {
+  margin: 0 em(24, $tbase) 0 em(14.7, $tbase);
+  & :nth-child(1) {
+    margin-top: em(5, $tbase);
+  }
+  & :nth-child(2) {
+    margin-top: em(7.3, $tbase);
+  }
+}
 .coeur {
   margin-top: em(23.1, 16) * -1;
   padding-right: em(10.1, $tbase);
 }
 footer {
+  align-items: center;
   width: 100vw;
   padding: em(14, $tbase) 4.8vw em(14, $tbase) 2.4vw;
   & p {
     @include flexbox;
     justify-content: space-between;
+    width: 75vw;
     margin-top: em(13, $tbase) * -1;
   }
 }

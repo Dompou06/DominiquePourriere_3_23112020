@@ -52,12 +52,36 @@ section {
 .figure--flex {
     height: em(173.5, $tbase);
 }
+#img-pg {
+  transform: scale(1.04, 1.3) translate(em(4.9, $tbase) * -1, em(20, $tbase) * -1);
+}
+#img-ne {
+  transform: scale(1, 2.4) translate(0, em(11, 16) * -1);
+}
+#img-af {
+  transform: scale(1.05, 1.45) translate(0, em(25, 16) * -1);
+}
+#img-ds {
+  transform: scale(1.05, 1.5) translate(em(5, 16) * -1, em(25, 16) * -1);
+}
+figcaption {
+  margin: 0 em(24, $tbase) 0 em(14.7, $tbase);
+  & :nth-child(1) {
+    margin-top: em(20.8, $tbase);
+  }
+  & :nth-child(2) {
+    margin-top: em(7.3, $tbase);
+  }
+}
 .coeur {
     margin-top: em(28.1, 16) * -1;
     padding-right: em(25.1, $tbase);
 }
-footer {   
-    padding: em(14, $tbase) 0 em(24, $tbase) 10.4vw;
-    & p {line-height: em(25, $tbase);}
+footer { 
+    flex-wrap: wrap;
+    padding: em(14, $tbase) 0 em(24, $tbase) 5.4vw;
+    & p {width: 100%;
+        line-height: em(25, $tbase);
+    }
 }
 }
