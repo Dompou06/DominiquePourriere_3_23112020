@@ -18,8 +18,9 @@
   }
 
   .section-menu article {
+    justify-content: flex-start;
     width: 33%;
-    height: 48vh;
+    height: 50vh;
   }
   .section-menu article h4 {
     padding-bottom: 0.0625em;

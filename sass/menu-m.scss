@@ -21,11 +21,14 @@
     }
     & .recette {
         & .plat {
-            width: 93%;
+            width: 95%;
         }
         & .recette-suite {
-         width: purcent(200, 290);
+         width: 80%;
          font-size: rem(15.2, 16);
+        }
+        & .retour {
+        width: 65%;
         }
     }
 }
