@@ -39,7 +39,6 @@
         height: 0;
         padding-right: em(20, 16);
         & i {
-            float: right;
             font-size: rem(20.8, 16);
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: rem(1, 16);
@@ -142,7 +141,6 @@ aside {
     @include button;
     @include degrade;
     margin-top: em(49.6, $tbase);
-    padding: 0 10vw 0 10vw;
     &:hover {
      @include button__hover;
      @include degrade__hover;   

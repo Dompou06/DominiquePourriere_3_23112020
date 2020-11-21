@@ -16,6 +16,9 @@
   .section-menu h2 {
     margin-top: -1.03125em;
   }
+  .section-menu h2 i {
+    float: right;
+  }
   .section-menu article {
     width: 100%;
   }
@@ -41,6 +44,10 @@
   }
   .recette:hover .coche {
     transform: translate(-2.6em);
+  }
+
+  aside .commande {
+    padding: 0 10vw 0 10vw;
   }
 }
 

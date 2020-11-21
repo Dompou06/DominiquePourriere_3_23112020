@@ -3,6 +3,7 @@
 @import "libs/functions.scss";
 
 @media #{$desktop-up} {
+body {overflow-y: hidden;}
 header {height: 5vh;}
 .img-menu {
     height: 35vh;
@@ -11,6 +12,11 @@ header {height: 5vh;}
    transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(300, 16) * -1);
 }
 .section-menu {
+    & h2 {
+        & i {
+            padding-left: em(10, $tbase);
+        }
+    }
     & article {
         justify-content: flex-start;
         width: 33%;
@@ -42,6 +48,13 @@ header {height: 5vh;}
             transform: translate(-2em);
         }
 }
-
+aside {
+    margin-top: -64vh;
+    margin-left: 80vw;
+    z-index: 10;
+    & .commande {
+      padding: 0 2vw 0 2vw;
+    }
+}
 
 }

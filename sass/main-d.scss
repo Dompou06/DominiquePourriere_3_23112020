@@ -5,7 +5,7 @@
 @media #{$desktop-up} {
   body {height: 100vh;}
   .presentation {
-      padding: em(10, $tbase) 0 em(14, $tbase) 0;
+      padding: em(12, $tbase) 0 em(22.5, $tbase) 0;
       & p {
        padding-top: em(5, $tbase);
       }
@@ -32,7 +32,7 @@
 
 section {
   padding: em(10, $tbase) 0 em(12.1, $tbase) 2.7vw;
-  margin-top: em(12.1, $tbase); 
+  margin-top: em(24.2, $tbase); 
   & h2 {
       padding-bottom: em(7, $tbase);  
   }

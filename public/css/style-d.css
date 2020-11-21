@@ -10,7 +10,7 @@
   }
 
   .presentation {
-    padding: 0.625em 0 0.875em 0;
+    padding: 0.75em 0 1.40625em 0;
   }
   .presentation p {
     padding-top: 0.3125em;
@@ -42,7 +42,7 @@
 
   section {
     padding: 0.625em 0 0.75625em 2.7vw;
-    margin-top: 0.75625em;
+    margin-top: 1.5125em;
   }
   section h2 {
     padding-bottom: 0.4375em;

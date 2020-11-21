@@ -12,6 +12,9 @@
 .section-menu {
     & h2 {
         margin-top: em(16.5, 16) * -1;
+        & i {
+            float: right;
+        }
     }
     & article {
         width: 100%;
@@ -43,5 +46,10 @@
         transform: translate(-2.6em);
     }
 }
+aside {
+    & .commande {
+      padding: 0 10vw 0 10vw;
+    }
+  }
 
 }

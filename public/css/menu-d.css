@@ -5,6 +5,10 @@
 /* Convertir pixel en % */
 /* Convertir pixel en vw */
 @media only screen and (min-width: 992px) {
+  body {
+    overflow-y: hidden;
+  }
+
   header {
     height: 5vh;
   }
@@ -17,6 +21,9 @@
     transform: scale(1.04, 0.87) translate(-0.30625em, -18.75em);
   }
 
+  .section-menu h2 i {
+    padding-left: 0.625em;
+  }
   .section-menu article {
     justify-content: flex-start;
     width: 33%;
@@ -44,6 +51,15 @@
   }
   .recette:hover .coche {
     transform: translate(-2em);
+  }
+
+  aside {
+    margin-top: -64vh;
+    margin-left: 80vw;
+    z-index: 10;
+  }
+  aside .commande {
+    padding: 0 2vw 0 2vw;
   }
 }
 
