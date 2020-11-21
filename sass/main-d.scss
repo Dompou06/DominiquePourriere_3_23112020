@@ -5,7 +5,7 @@
 @media #{$desktop-up} {
   body {height: 100vh;}
   .presentation {
-      padding: em(10, $tbase) 0 em(14, $tbase) 0;
+      padding: em(12, $tbase) 0 em(22.5, $tbase) 0;
       & p {
        padding-top: em(5, $tbase);
       }
@@ -32,7 +32,7 @@
 
 section {
   padding: em(10, $tbase) 0 em(12.1, $tbase) 2.7vw;
-  margin-top: em(12.1, $tbase); 
+  margin-top: em(24.2, $tbase); 
   & h2 {
       padding-bottom: em(7, $tbase);  
   }
@@ -61,7 +61,7 @@ section {
 #img-ds {
   transform: scale(1.05, 1.5) translate(em(5, 16) * -1, em(10, 16) * -1);
 }
-.figure--figcaption {
+.figure--caption {
   margin: 0 em(24, $tbase) 0 em(14.7, $tbase);
   & :nth-child(1) {
     margin-top: em(5, $tbase);
@@ -75,14 +75,15 @@ section {
   padding-right: em(10.1, $tbase);
 }
 footer {
+  justify-content: space-evenly;
   align-items: center;
+  height: 7vh;
   width: 100vw;
-  padding: em(14, $tbase) 4.8vw em(14, $tbase) 2.4vw;
+  & svg {padding-top: 1.5vh;}
   & p {
     @include flexbox;
     justify-content: space-between;
-    width: 75vw;
-    margin-top: em(13, $tbase) * -1;
+    width: 70vw;
   }
 }
 

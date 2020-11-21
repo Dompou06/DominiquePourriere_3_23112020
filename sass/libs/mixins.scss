@@ -35,7 +35,6 @@
         transform: rotate($loader * 11);
         animation-delay: 0s;
         }
-
 }
 // Flexbox
 @mixin flexbox {
@@ -67,3 +66,8 @@
     background: -moz-linear-gradient($degre, $color1, $color2);
     background: -webkit-linear-gradient($degre - 240, $color1, $color2);
   }
+// Filtres images
+@mixin img-pg {filter: contrast(110%) brightness(110%) opacity(90%);}
+@mixin img-ne {filter: contrast(110%) brightness(105%) opacity(90%);}
+@mixin img-af {filter: contrast(130%) brightness(120%) opacity(90%);}
+@mixin img-ds {filter: brightness(120%) opacity(90%);}

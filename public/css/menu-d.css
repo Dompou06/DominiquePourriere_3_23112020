@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* Enlever l'unité */
+/* Convertir pixel en rem */
+/* Convertir pixel en em */
+/* Convertir pixel en % */
+/* Convertir pixel en vw */
+@media only screen and (min-width: 992px) {
+  body {
+    overflow-y: hidden;
+  }
+
+  header {
+    height: 5vh;
+  }
+
+  .img-menu {
+    height: 35vh;
+  }
+
+  .m-pg {
+    transform: scale(1.04, 0.87) translate(-0.30625em, -18.75em);
+  }
+
+  .m-ne {
+    transform: scale(1, 1) translate(-0.3125em, -48.75em);
+  }
+
+  .m-af {
+    transform: scale(1, 0.85) translate(0, -23.75em);
+  }
+
+  .m-ds {
+    transform: scale(1.5, 1) translate(-0.3125em, -24.6875em);
+  }
+
+  .section-menu h2 i {
+    padding-left: 0.625em;
+  }
+  .section-menu article {
+    justify-content: flex-start;
+    width: 33%;
+    height: 50vh;
+    z-index: 10;
+  }
+  .section-menu article h4 {
+    padding-bottom: 0.0625em;
+  }
+  .section-menu .recette .plat {
+    width: 93%;
+  }
+  .section-menu .recette .recette-suite {
+    font-size: 0.9375rem;
+    font-stretch: 50%;
+  }
+  .section-menu .recette .retour {
+    max-width: 15vw;
+  }
+
+  .recette:hover .plat {
+    width: 85%;
+  }
+  .recette:hover .plat .noretour {
+    width: 57.5862068966%;
+  }
+  .recette:hover .coche {
+    transform: translate(-2em);
+  }
+
+  aside {
+    margin-top: -64vh;
+    margin-left: 80vw;
+    z-index: 5;
+  }
+  aside .commande {
+    padding: 0 2vw 0 2vw;
+  }
+}
+
+/*# sourceMappingURL=menu-d.css.map */
