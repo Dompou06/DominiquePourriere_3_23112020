@@ -23,7 +23,14 @@
     width: 100vw;
     @include img-pg;
 }
-
+.m-ne {
+  width: 100vw;
+  @include img-ne;
+}
+.m-af {
+  width: 100vw;
+  @include img-af;
+}
 
 
 .section-menu {

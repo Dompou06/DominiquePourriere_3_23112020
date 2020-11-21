@@ -11,6 +11,12 @@ header {height: 5vh;}
 .m-pg {
    transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(300, 16) * -1);
 }
+.m-ne {
+    transform: scale(1, 1) translate(em(5, 16) * -1, em(780, 16) * -1);
+}
+.m-af {
+    transform: scale(1, .85) translate(0, em(380, 16) * -1);
+}
 .section-menu {
     & h2 {
         & i {

@@ -9,6 +9,12 @@
 .m-pg {
    transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(31, 16) * -1);
 }
+.m-ne {
+    transform: scale(1, .78) translate(em(5, 16) * -1, em(220, 16) * -1);
+}
+.m-af {
+    transform: scale(1, .85) translate(0, em(30, 16) * -1);
+}
 .section-menu {
     & h2 {
         margin-top: em(16.5, 16) * -1;

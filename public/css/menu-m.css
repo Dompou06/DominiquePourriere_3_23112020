@@ -13,6 +13,14 @@
     transform: scale(1.04, 0.87) translate(-0.30625em, -1.9375em);
   }
 
+  .m-ne {
+    transform: scale(1, 0.78) translate(-0.3125em, -13.75em);
+  }
+
+  .m-af {
+    transform: scale(1, 0.85) translate(0, -1.875em);
+  }
+
   .section-menu h2 {
     margin-top: -1.03125em;
   }
