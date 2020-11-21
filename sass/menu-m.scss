@@ -1,0 +1,64 @@
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+
+@media #{$mobile-up} {
+.img-menu {
+        height: em(258, $tbase);
+}    
+.m-pg {
+   transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(31, 16) * -1);
+}
+.m-ne {
+    transform: scale(1, .78) translate(em(5, 16) * -1, em(220, 16) * -1);
+}
+.m-af {
+    transform: scale(1, .85) translate(0, em(30, 16) * -1);
+}
+.m-ds {
+    transform: scale(1.05, 1.05) translate(em(5, 16) * -1, em(50, 16) * -1);
+}
+.section-menu {
+    & h2 {
+        margin-top: em(16.5, 16) * -1;
+        & i {
+            float: right;
+        }
+    }
+    & article {
+        width: 100%;
+        & h4 {
+            padding-bottom: em(2.9, $tbase);
+          }
+    }
+    & .recette {
+        & .plat {
+            width: 95%;
+        }
+        & .recette-suite {
+         width: 80%;
+         font-size: rem(15.2, 16);
+        }
+        & .retour {
+        width: 65%;
+        }
+    }
+}
+.recette:hover { 
+    & .plat {    
+    width: 85%;
+        & .noretour {
+        width: purcent(165, 290);
+        }
+    }
+    & .coche {
+        transform: translate(-2.6em);
+    }
+}
+aside {
+    & .commande {
+      padding: 0 10vw 0 10vw;
+    }
+  }
+
+}

@@ -2,9 +2,6 @@
 @import "libs/mixins.scss";
 @import "libs/functions.scss";
 
-
-
-
 @include resetcss;
 @include fonts;
 body {
@@ -29,51 +26,52 @@ h2{
     background: $gris-footer;
     opacity: .9;
     z-index: 150;
-    animation: fadein 3s;
-    & &__loader {
-       display: inline-block;
-       position: relative;
-       height: em(80, $tbase);
-       width: em(80, $tbase);
-       margin-top: em(300, $tbase);
-       margin-left: purcen(45);
-       color: $gris-section;
-       & div {
-        transform-origin: em(40, $tbase);
-        animation: anim-loader 1.5s linear infinite;
-      }
-      & div::after {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: em(15, $tbase);
-        left: em(50, $tbase);
-        width: em(7, $tbase);
-        height: em(7, $tbase);
-        border-radius: purcen(50);
-        background: #fff;
-      }
-    }
+    animation: fadein 5s;
 }
-@include loader;
 @keyframes fadein {
-    0% {
-     margin-top: 0;
+    0% {margin-top: 0;}
+    50% {margin-top: 0;
+      opacity: .9;
     }
-    99% {
-     margin-top: 0;
-    }
+    75% {opacity: .7;}
+    90% {opacity: 0.2;}
     100% {
-      margin-top: -100vh;
-    }
-}
-@keyframes anim-loader {
-    0% {
-      opacity: 1;
-    }
-    100% {
+      margin-top: -120vh;
       opacity: 0;
     }
+}
+.load-spinner--loader {
+  display: inline-block;
+  position: relative;
+  height: em(80, $tbase);
+  width: em(80, $tbase);
+  margin-top: em(300, $tbase);
+  margin-left: purcen(45);
+  color: $gris-section;
+  & div {
+   transform-origin: em(40, $tbase);
+   animation: anim-loader 1.5s linear infinite;
+ }
+ & div::after {
+   content: " ";
+   display: block;
+   position: absolute;
+   top: em(15, $tbase);
+   left: em(50, $tbase);
+   width: em(7, $tbase);
+   height: em(7, $tbase);
+   border-radius: purcen(50);
+   background: #fff;
+ }
+}
+@include loader;
+@keyframes anim-loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 header {
     @include flexbox;
@@ -208,18 +206,18 @@ header {
       }
   } 
   #img-pg {
-   filter: contrast(110%) brightness(110%) opacity(90%);
+    @include img-pg;
   }
   #img-ne {
-    filter: contrast(110%) brightness(105%) opacity(90%);
+    @include img-ne;
   }
   #img-af {
-    filter: contrast(130%) brightness(120%) opacity(90%);
+    @include img-af;
   }
   #img-ds {
-    filter: brightness(120%) opacity(90%);
+    @include img-ds;
   }
-  .figure--figcaption {
+  .figure--caption {
     & :nth-child(1) {
       font-weight: 700;
     }

@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* Enlever l'unité */
+/* Convertir pixel en rem */
+/* Convertir pixel en em */
+/* Convertir pixel en % */
+/* Convertir pixel en vw */
+.header-menu {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  align-items: center;
+}
+.header-menu :nth-child(2) {
+  width: 2.48125em;
+  text-align: right;
+}
+.header-menu :nth-child(3) {
+  width: 89.4vw;
+  text-align: center;
+  height: 1.41875em;
+}
+
+.img-menu {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.m-pg {
+  width: 100vw;
+  filter: contrast(110%) brightness(110%) opacity(90%);
+}
+
+.m-ne {
+  width: 100vw;
+  filter: contrast(110%) brightness(105%) opacity(90%);
+}
+
+.m-af {
+  width: 100vw;
+  filter: contrast(130%) brightness(120%) opacity(90%);
+}
+
+.m-ds {
+  width: 100vw;
+  filter: brightness(120%) opacity(90%);
+}
+
+.section-menu {
+  position: relative;
+  border-radius: 2.40625em 2.40625em 0 0;
+  margin-top: -2.09375em;
+  padding-right: 0.6875em;
+  z-index: 10;
+}
+.section-menu h2 {
+  font-family: "shrikhandregular";
+  font-style: italic;
+  font-size: 1.725rem;
+  height: 0;
+  padding-right: 1.25em;
+}
+.section-menu h2 i {
+  font-size: 1.3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.0625rem;
+}
+.section-menu article {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-direction: column;
+  margin-top: 1.71875em;
+}
+.section-menu article h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.section-menu article .hr {
+  width: 2.5rem;
+  height: 0.18125em;
+  background: #99E2D0;
+}
+.section-menu article .recette {
+  position: relative;
+  width: 95%;
+  margin-top: 0.89375em;
+  background: #fff;
+  border-radius: 0.80625em;
+  box-shadow: rgba(126, 126, 126, 0.3) 0 0.25em 0.625em;
+  overflow: hidden;
+}
+.section-menu article .recette .plat {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.6875em;
+  padding-left: 0.7625em;
+  z-index: 100;
+  transition: width 2s;
+}
+.section-menu article .recette .plat h5 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.05625rem;
+  line-height: 1.39375em;
+  margin: 0.575em 0 0.975em 0;
+}
+.section-menu article .recette .plat .recette-suite {
+  margin-top: -0.975em;
+}
+.section-menu article .recette .plat .prix {
+  margin-top: -0.975em;
+  font-weight: 600;
+}
+.section-menu article .recette .coche {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  margin-left: 100%;
+  padding: 0 4% 0 4%;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.275rem;
+  color: #fff;
+  border-radius: 0 0.6em 0.6em 0;
+  background: #99E2D0;
+  transition: transform 2s;
+}
+.section-menu article .recette .coche :nth-child(1) {
+  display: inline-block;
+}
+
+.recette:hover .plat .noretour {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+.recette:hover .coche :nth-child(1) {
+  animation: rotate 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+aside {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  justify-content: center;
+  width: 100vw;
+}
+aside .commande {
+  height: 3.125em;
+  font-weight: 700;
+  border: 0;
+  color: #fff;
+  padding: 0 1.1875em 0 1.1875em;
+  border-radius: 1.5625em;
+  outline: none;
+  box-shadow: rgba(126, 126, 126, 0.3) 0 0.25em 0.625em;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background: -moz-linear-gradient(170deg, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(-70deg, #FF79DA, #9356DC);
+  margin-top: 3.1em;
+}
+aside .commande:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0.25em 0.625em;
+  background: linear-gradient(170deg, #fface8, #ae80e5);
+  background: -moz-linear-gradient(170deg, #fface8, #ae80e5);
+  background: -webkit-linear-gradient(-70deg, #fface8, #ae80e5);
+}
+
+.entrees {
+  opacity: 1;
+  animation: affich-entrees 12s ease-in-out;
+}
+
+.plats {
+  opacity: 1;
+  animation: affich-plats 15s ease-in-out;
+}
+
+.desserts {
+  opacity: 1;
+  animation: affich-desserts 18s ease-in-out;
+}
+
+@keyframes affich-entrees {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes affich-plats {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes affich-desserts {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.entrees .r1 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 3s ease-in-out;
+}
+
+.entrees .r2 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 6s ease-in-out;
+}
+
+.entrees .r3 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 9s ease-in-out;
+}
+
+.entrees .r4 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 12s ease-in-out;
+}
+
+.plats .r1 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 3s;
+  animation-delay: 7.5s;
+}
+
+.plats .r2 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 6s;
+  animation-delay: 7.5s;
+}
+
+.plats .r3 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 9s;
+  animation-delay: 7.5s;
+}
+
+.plats .r4 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 12s;
+  animation-delay: 7.5s;
+}
+
+.desserts .r1 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 3s;
+  animation-delay: 12s;
+}
+
+.desserts .r2 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 6s;
+  animation-delay: 12s;
+}
+
+.desserts .r3 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 9s;
+  animation-delay: 12s;
+}
+
+.desserts .r4 {
+  margin-top: 0.89375em;
+  opacity: 1;
+  animation: affichage 12s;
+  animation-delay: 12s;
+}
+
+@keyframes affichage {
+  0% {
+    opacity: 0;
+    margin-top: 1.7875em;
+  }
+  50% {
+    opacity: 0.4;
+    margin-top: 1.25em;
+  }
+  75% {
+    margin-top: 0.89375em;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */
