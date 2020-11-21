@@ -31,6 +31,10 @@
   width: 100vw;
   @include img-af;
 }
+.m-ds {
+  width: 100vw;
+  @include img-ds;
+}
 
 
 .section-menu {

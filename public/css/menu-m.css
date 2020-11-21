@@ -21,6 +21,10 @@
     transform: scale(1, 0.85) translate(0, -1.875em);
   }
 
+  .m-ds {
+    transform: scale(1.05, 1.05) translate(-0.3125em, -3.125em);
+  }
+
   .section-menu h2 {
     margin-top: -1.03125em;
   }

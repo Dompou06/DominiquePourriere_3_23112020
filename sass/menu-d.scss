@@ -17,6 +17,9 @@ header {height: 5vh;}
 .m-af {
     transform: scale(1, .85) translate(0, em(380, 16) * -1);
 }
+.m-ds {
+    transform: scale(1.5, 1) translate(em(5, 16) * -1, em(395, 16) * -1);
+}
 .section-menu {
     & h2 {
         & i {
@@ -27,6 +30,7 @@ header {height: 5vh;}
         justify-content: flex-start;
         width: 33%;
         height: 50vh;
+        z-index: 10;
         & h4 {
             padding-bottom: em(1, $tbase);
           }
@@ -57,7 +61,7 @@ header {height: 5vh;}
 aside {
     margin-top: -64vh;
     margin-left: 80vw;
-    z-index: 10;
+    z-index: 5;
     & .commande {
       padding: 0 2vw 0 2vw;
     }

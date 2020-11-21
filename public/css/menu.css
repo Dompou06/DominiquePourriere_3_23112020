@@ -40,6 +40,11 @@
   filter: contrast(130%) brightness(120%) opacity(90%);
 }
 
+.m-ds {
+  width: 100vw;
+  filter: brightness(120%) opacity(90%);
+}
+
 .section-menu {
   position: relative;
   border-radius: 2.40625em 2.40625em 0 0;
