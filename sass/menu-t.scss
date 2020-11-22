@@ -4,7 +4,12 @@
 
 @media #{$tablet-up} {
 
+.img-menu {
+    height: 35vh;
+} 
 .section-menu {
+    justify-content: space-between;
+    padding-right: 3vw;
         & h2 {
             & i {
                 padding-left: em(10, $tbase);
@@ -13,22 +18,51 @@
         & article {
             justify-content: flex-start;
             width: 33%;
-            height: 50vh;
+            height: 60vh;
             z-index: 10;
             & h4 {
                 padding-bottom: em(1, $tbase);
               }
         }
         & .recette {
+            @include flexbox;
             & .plat {
                 width: 93%;
+                font-stretch: 50%;
             }
             & .recette-suite {
-                font-size: rem(15, 16);
+                font-size: rem(12.5, $tbase);
                 font-stretch: 50%;
               }
             & .retour {max-width: 15vw;
             }
+            & .prix {
+                @extend .recette-suite;             
             }
-        }
+            .coche {
+                margin-left: 100%;
+            }
+            }
+        .recette:hover {
+            & .plat {
+                width: 80%;   
+                & .noretour {
+            width: 70%;
+            }
+            }
+            & .coche {
+                transform: translate(-2em);
+            }
+        }    
+  }
+
+  aside {
+    margin-top: -72vh;
+    margin-left: 80vw;
+    z-index: 5;
+    & .commande {
+      padding: 0 2vw 0 2vw;
+    }
+}
+
 }
