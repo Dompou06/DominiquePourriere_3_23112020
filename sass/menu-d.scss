@@ -21,6 +21,8 @@ header {height: 5vh;}
     transform: scale(1.5, 1) translate(em(5, 16) * -1, em(395, 16) * -1);
 }
 .section-menu {
+    @include flexbox;
+    width: 100vw;
     & h2 {
         & i {
             padding-left: em(10, $tbase);
