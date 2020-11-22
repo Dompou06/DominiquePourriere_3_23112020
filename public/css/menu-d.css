@@ -33,6 +33,12 @@
     transform: scale(1.5, 1) translate(-0.3125em, -24.6875em);
   }
 
+  .section-menu {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    width: 100vw;
+  }
   .section-menu h2 i {
     padding-left: 0.625em;
   }

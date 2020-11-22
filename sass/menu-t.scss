@@ -1,0 +1,34 @@
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+
+@media #{$tablet-up} {
+
+.section-menu {
+        & h2 {
+            & i {
+                padding-left: em(10, $tbase);
+            }
+        }
+        & article {
+            justify-content: flex-start;
+            width: 33%;
+            height: 50vh;
+            z-index: 10;
+            & h4 {
+                padding-bottom: em(1, $tbase);
+              }
+        }
+        & .recette {
+            & .plat {
+                width: 93%;
+            }
+            & .recette-suite {
+                font-size: rem(15, 16);
+                font-stretch: 50%;
+              }
+            & .retour {max-width: 15vw;
+            }
+            }
+        }
+}
