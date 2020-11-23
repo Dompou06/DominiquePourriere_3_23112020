@@ -9,7 +9,12 @@
     height: 100vh;
   }
 
+  header, .localisation {
+    height: 8.6vh;
+  }
+
   .presentation {
+    height: 22.2vh;
     padding: 0.75em 0 1.40625em 0;
   }
   .presentation p {
@@ -21,6 +26,7 @@
   }
 
   .fonctionnement {
+    height: 17.7vh;
     margin-top: 0.375em;
     padding-left: 2.7vw;
   }
@@ -41,8 +47,9 @@
   }
 
   section {
+    height: 35.2vh;
     padding: 0.625em 0 0.75625em 2.7vw;
-    margin-top: 1.5125em;
+    margin-top: -0.325em;
   }
   section h2 {
     padding-bottom: 0.4375em;
@@ -95,7 +102,7 @@
   footer {
     justify-content: space-evenly;
     align-items: center;
-    height: 7vh;
+    height: 7.3vh;
     width: 100vw;
   }
   footer svg {
