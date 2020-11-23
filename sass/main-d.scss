@@ -4,7 +4,9 @@
 
 @media #{$desktop-up} {
   body {height: 100vh;}
+  header, .localisation {height: 8.6vh;}
   .presentation {
+    height: 22.2vh;
       padding: em(12, $tbase) 0 em(22.5, $tbase) 0;
       & p {
        padding-top: em(5, $tbase);
@@ -12,6 +14,7 @@
    }  
    .btn {margin-top: em(10.4, $tbase);}
    .fonctionnement {
+     height: 17.7vh;
       margin-top: em(6, $tbase);
       padding-left: 2.7vw;
       & &--flex {
@@ -31,8 +34,9 @@
     }
 
 section {
+  height: 35.2vh;
   padding: em(10, $tbase) 0 em(12.1, $tbase) 2.7vw;
-  margin-top: em(24.2, $tbase); 
+  margin-top: em(5.2, $tbase) * -1; 
   & h2 {
       padding-bottom: em(7, $tbase);  
   }
@@ -77,7 +81,7 @@ section {
 footer {
   justify-content: space-evenly;
   align-items: center;
-  height: 7vh;
+  height: 7.3vh;
   width: 100vw;
   & svg {padding-top: 1.5vh;}
   & p {
