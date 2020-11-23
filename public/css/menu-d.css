@@ -56,7 +56,7 @@
   }
   .section-menu .recette .recette-suite {
     font-size: 0.9375rem;
-    font-stretch: 50%;
+    font-stretch: condensed;
   }
   .section-menu .recette .retour {
     max-width: 15vw;

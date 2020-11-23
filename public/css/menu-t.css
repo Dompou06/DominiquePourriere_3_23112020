@@ -9,6 +9,22 @@
     height: 35vh;
   }
 
+  .m-pg {
+    transform: scale(1.04, 0.87) translate(-0.30625em, -15.625em);
+  }
+
+  .m-ne {
+    transform: scale(1, 1) translate(-0.3125em, -33.75em);
+  }
+
+  .m-af {
+    transform: scale(1, 0.85) translate(0, -20.625em);
+  }
+
+  .m-ds {
+    transform: scale(1, 1) translate(-0.3125em, -20em);
+  }
+
   .section-menu {
     justify-content: space-between;
     padding-right: 3vw;
@@ -32,11 +48,11 @@
   }
   .section-menu .recette .plat {
     width: 93%;
-    font-stretch: 50%;
+    font-stretch: condensed;
   }
   .section-menu .recette .recette-suite, .section-menu .recette .prix {
     font-size: 0.78125rem;
-    font-stretch: 50%;
+    font-stretch: condensed;
   }
   .section-menu .recette .retour {
     max-width: 15vw;

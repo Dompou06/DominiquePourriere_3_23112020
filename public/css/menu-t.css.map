@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../../sass/libs/functions.scss","../../sass/menu-t.scss","../../sass/libs/mixins.scss"],"names":[],"mappings":";AAAA;AAOA;AAIA;AAIA;AASA;ACpBA;EAEA;IACI;;;EAEJ;IACI;IACA;;EAEQ;IACI;;EAGR;IACI;IACA;IACA;IACA;;EACA;IACI;;EAGR;ICcJ;IACA;IACA;;EDdQ;IACI;IACA;;EAEJ;IACI;IACA;;EAEJ;IAAW;;EAKX;IACI;;EAIJ;IACI;;EACA;IACJ;;EAGA;IACI;;;EAKd;IACE;IACA;IACA;;EACA;IACE","file":"menu-t.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../../sass/libs/functions.scss","../../sass/menu-t.scss","../../sass/libs/mixins.scss"],"names":[],"mappings":";AAAA;AAOA;AAIA;AAIA;AASA;ACpBA;EAEA;IACI;;;EAEJ;IACG;;;EAEH;IACI;;;EAEJ;IACI;;;EAEJ;IACI;;;EAEJ;IACI;IACA;;EAEQ;IACI;;EAGR;IACI;IACA;IACA;IACA;;EACA;IACI;;EAGR;ICEJ;IACA;IACA;;EDFQ;IACI;IACA;;EAEJ;IACI;IACA;;EAEJ;IAAW;;EAKX;IACI;;EAIJ;IACI;;EACA;IACJ;;EAGA;IACI;;;EAKd;IACE;IACA;IACA;;EACA;IACE","file":"menu-t.css"}
+>>>>>>> feature/validator
