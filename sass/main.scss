@@ -158,8 +158,9 @@ header {
       }
   }  
   .choix:hover {
-    & :nth-child(2) {
+    & .choix--intitule {
       background-color: $gris-hover;
+      box-shadow: darken(rgba($gris-moyen, 0.3), 50%) 0 0 em(10, $tbase);
       & :nth-child(1) {
         color: $primaire;
       }

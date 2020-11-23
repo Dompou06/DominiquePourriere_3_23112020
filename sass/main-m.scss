@@ -7,10 +7,10 @@
     .presentation {
         padding: em(42, $tbase) 0 em(57, $tbase) 0;
         & h2 {
-        padding: 0 25vw 0 25vw;
+        padding: 0 15vw 0 15vw;
          }
         & p {
-         padding: em(21.7, $tbase) 15vw 0 15vw;
+         padding: em(21.7, $tbase) 10vw 0 10vw;
         }
      }
      .btn {margin-top: em(30.8, $tbase);}
@@ -75,7 +75,7 @@ section {
 }
 .coeur {
     margin-top: em(28.1, 16) * -1;
-    padding-right: em(25.1, $tbase);
+    padding-right: em(10, $tbase);
 }
 footer { 
     flex-wrap: wrap;

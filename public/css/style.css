@@ -320,10 +320,11 @@ header {
   font-weight: 700;
 }
 
-.choix:hover :nth-child(2) {
+.choix:hover .choix--intitule {
   background-color: #f5edff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 0.625em;
 }
-.choix:hover :nth-child(2) :nth-child(1) {
+.choix:hover .choix--intitule :nth-child(1) {
   color: #9356DC;
 }
 

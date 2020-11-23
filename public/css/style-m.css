@@ -9,10 +9,10 @@
     padding: 2.625em 0 3.5625em 0;
   }
   .presentation h2 {
-    padding: 0 25vw 0 25vw;
+    padding: 0 15vw 0 15vw;
   }
   .presentation p {
-    padding: 1.35625em 15vw 0 15vw;
+    padding: 1.35625em 10vw 0 10vw;
   }
 
   .btn {
@@ -88,7 +88,7 @@
 
   .coeur {
     margin-top: -1.75625em;
-    padding-right: 1.56875em;
+    padding-right: 0.625em;
   }
 
   footer {
