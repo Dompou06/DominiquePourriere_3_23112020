@@ -9,7 +9,7 @@ header {height: 5vh;}
     height: 35vh;
 }  
 .m-pg {
-   transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(300, 16) * -1);
+  transform: scale(1.04, .87) translate(em(4.9, 16) * -1, em(300, 16) * -1);
 }
 .m-ne {
     transform: scale(1, 1) translate(em(5, 16) * -1, em(780, 16) * -1);
@@ -23,6 +23,7 @@ header {height: 5vh;}
 .section-menu {
     @include flexbox;
     width: 100vw;
+    height: 58.5vh;
     & h2 {
         & i {
             padding-left: em(10, $tbase);
@@ -43,7 +44,6 @@ header {height: 5vh;}
         }
         & .recette-suite {
             font-size: rem(15, 16);
-            font-stretch: condensed;
           }
         & .retour {max-width: 15vw;
         }
@@ -68,5 +68,5 @@ aside {
       padding: 0 2vw 0 2vw;
     }
 }
-
+footer {height: 7vh;}
 }

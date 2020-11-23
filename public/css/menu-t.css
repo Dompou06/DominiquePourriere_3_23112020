@@ -52,7 +52,6 @@
   }
   .section-menu .recette .recette-suite, .section-menu .recette .prix {
     font-size: 0.78125rem;
-    font-stretch: condensed;
   }
   .section-menu .recette .retour {
     max-width: 15vw;

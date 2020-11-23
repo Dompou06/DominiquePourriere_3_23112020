@@ -110,6 +110,7 @@
 }
 .section-menu article .recette .plat .recette-suite {
   margin-top: -0.975em;
+  font-stretch: condensed;
 }
 .section-menu article .recette .plat .prix {
   margin-top: -0.975em;
