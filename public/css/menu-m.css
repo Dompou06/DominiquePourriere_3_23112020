@@ -10,19 +10,19 @@
   }
 
   .m-pg {
-    transform: scale(1.04, 0.87) translate(-0.30625em, -1.9375em);
+    transform: scale(1.04, 1.1) translate(-0.30625em, -0.125em);
   }
 
   .m-ne {
-    transform: scale(1, 0.78) translate(-0.3125em, -13.75em);
+    transform: scale(1.1, 1) translate(0, -6.125em);
   }
 
   .m-af {
-    transform: scale(1, 0.85) translate(0, -1.875em);
+    transform: scale(1.1, 1.2) translate(0, 0.625em);
   }
 
   .m-ds {
-    transform: scale(1.05, 1.05) translate(-0.3125em, -3.125em);
+    transform: scale(1.05, 1.25) translate(-0.3125em, 0);
   }
 
   .section-menu h2 {
@@ -55,7 +55,7 @@
     width: 56.8965517241%;
   }
   .recette:hover .coche {
-    transform: translate(-2.6em);
+    transform: translate(-2em);
   }
 
   aside .commande {
